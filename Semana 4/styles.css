@@ -1,0 +1,221 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background-color: #f0f4f8; 
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.contenedor-principal {
+    background: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #FCD116; 
+}
+
+h2 { 
+    color: #003893; 
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #666;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #333;
+    font-weight: 600;
+    margin-top: 30px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+
+.formulario { 
+    background: #f8fafc; 
+    padding: 20px; 
+    border-radius: 12px; 
+    border: 1px solid #e2e8f0;
+    margin-bottom: 20px; 
+}
+
+.grupo-control { 
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 15px; 
+}
+
+label { 
+    font-weight: 600; 
+    font-size: 0.85em;
+    margin-bottom: 6px; 
+    color: #475569; 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input { 
+    padding: 12px; 
+    border: 2px solid #cbd5e1; 
+    border-radius: 8px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #003893; 
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(0, 56, 147, 0.1);
+}
+
+
+.btn { 
+    width: 100%; 
+    padding: 14px; 
+    border: none; 
+    border-radius: 8px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+    font-size: 0.95em;
+    cursor: pointer; 
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-agregar { 
+    background-color: #003893; 
+    color: white; 
+}
+
+.btn-agregar:hover {
+    background-color: #002766;
+    box-shadow: 0 4px 12px rgba(0, 56, 147, 0.25);
+}
+
+.btn-sincronizar { 
+    background-color: transparent; 
+    color: #003893; 
+    border: 2px solid #003893;
+    margin-top: 15px; 
+}
+
+.btn-sincronizar:hover {
+    background-color: #003893;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 56, 147, 0.15);
+}
+
+.btn-eliminar { 
+    background-color: #ce1126; 
+    color: white; 
+    border: none; 
+    padding: 6px 12px; 
+    border-radius: 6px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 600;
+    cursor: pointer; 
+    transition: background 0.2s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #990c1b;
+}
+
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+li { 
+    background: #ffffff; 
+    padding: 14px 18px; 
+    margin-bottom: 10px; 
+    border-radius: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: translateX(4px);
+    border-color: #cbd5e1;
+}
+
+.info-prod { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.nombre-prod { 
+    font-weight: 600; 
+    color: #1e293b;
+    font-size: 0.95em;
+}
+
+.precio-prod { 
+    color: #10b981; 
+    font-weight: 700;
+    font-size: 0.9em; 
+    margin-top: 2px;
+}
+
+
+.mensaje { 
+    padding: 12px; 
+    border-radius: 8px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 0.9em;
+    font-weight: 600;
+    display: none; 
+    animation: fadeIn 0.3s ease;
+}
+
+.exito { 
+    background-color: #ecfdf5; 
+    color: #065f46; 
+    border: 1px solid #a7f3d0; 
+}
+
+.error { 
+    background-color: #fef2f2; 
+    color: #991b1b; 
+    border: 1px solid #fca5a5; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

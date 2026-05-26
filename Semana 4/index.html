@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventario </title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <h2> Inventario de Productos </h2>
+        <p class="subtitulo">Módulo de gestión integral con sincronización en la nube</p>
+        
+        <div id="panelMensaje" class="mensaje"></div>
+
+        <div class="formulario">
+            <div class="grupo-control">
+                <label for="nombreProducto">Nombre del Artículo</label>
+                <input type="text" id="nombreProducto" placeholder="Ej: Computador Portátil ">
+            </div>
+            <div class="grupo-control">
+                <label for="precioProducto">Valor Comercial ($ COP)</label>
+                <input type="number" id="precioProducto" placeholder="Ej: 2500000">
+            </div>
+            <button id="btnAgregar" class="btn btn-agregar">💾 Guardar en Inventario Local</button>
+        </div>
+
+        <button id="btnSincronizar" class="btn btn-sincronizar">🔄 Sincronizar con Servidor Remoto</button>
+
+        <h3>📦 Existencias en Memoria</h3>
+        <ul id="listaProductos"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
